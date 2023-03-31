@@ -1,3 +1,5 @@
+package LibrarySystem;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,7 +10,7 @@ public class LibrarySystems {
 
     public void addBookWithTitleAndAuthorList(String title, List<Author> authors) throws EmptyAuthorListException {
         if (authors.size() == 0) {
-            throw new EmptyAuthorListException("Author list is empty");
+            throw new EmptyAuthorListException("LibrarySystem.Author list is empty");
         }
 
     }

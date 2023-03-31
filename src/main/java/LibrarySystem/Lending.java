@@ -1,3 +1,7 @@
+package LibrarySystem;
+
+import LibrarySystem.Book;
+
 import java.time.LocalDate;
 
 public class Lending {

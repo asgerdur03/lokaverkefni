@@ -1,0 +1,22 @@
+final project requirements
+
+-use git (week 2)
+-use maven structure (notum nú þegar, kannski bæta við pom skra eða ehv, 4)
+-JUnit (not user interface, but like getters and setters etc. 5)
+-UML design (8, 10)
+-Design patterns, (e.g. the library system could introduce the concept of an omnibus, i.e.
+                  a book divided into multiple volumes collected together in a box; a GUI typically uses
+                  the observer patterns to observe the business objects), even patterns not covered in the
+                  course) (9)
+-refactoring (6)
+-Package a jar file and provide a command so that an end user without an IDE or Maven
+ can run your program (verk 3,4)
+-Documentation (have the UML design part of it, but also mention where a pattern is
+               used, what Maven goals are supported, the license, and have end user documentation,
+               e.g., on how to run your jar) (10)
+
+to-do for project
+make user interface so we can run test cases
+
+
+

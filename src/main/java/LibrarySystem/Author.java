@@ -1,6 +1,12 @@
-public class User {
+package LibrarySystem;
+
+public class Author {
     private String name;
-    
+
+    public Author(String name) {
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
@@ -8,8 +14,5 @@ public class User {
     public void setName(String name) {
         this.name = name;
     }
-
-    public User(String name) {
-        this.name = name;
-    }
+    
 }

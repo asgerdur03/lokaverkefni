@@ -1,3 +1,5 @@
+package LibrarySystem;
+
 import java.util.List;
 
 public class Book {
@@ -8,7 +10,7 @@ public class Book {
         this.title = title;
         this.authors = authors;
         if (this.authors.isEmpty()) {
-            throw new EmptyAuthorListException("Author list is empty");
+            throw new EmptyAuthorListException("LibrarySystem.Author list is empty");
         }
     }
 
@@ -22,14 +24,14 @@ public class Book {
 
     public List<Author> getAuthors() throws EmptyAuthorListException {
         if (this.authors.isEmpty()) {
-            throw new EmptyAuthorListException("Author list is empty");
+            throw new EmptyAuthorListException("LibrarySystem.Author list is empty");
         }
         return authors;
     }
 
     public void setAuthors(List<Author> authors) throws EmptyAuthorListException {
         if (this.authors.isEmpty()) {
-            throw new EmptyAuthorListException("Author list is empty");
+            throw new EmptyAuthorListException("LibrarySystem.Author list is empty");
         }
         this.authors = authors;
     }
