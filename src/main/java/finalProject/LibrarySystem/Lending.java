@@ -1,6 +1,4 @@
-package LibrarySystem;
-
-import LibrarySystem.Book;
+package finalProject.LibrarySystem;
 
 import java.time.LocalDate;
 

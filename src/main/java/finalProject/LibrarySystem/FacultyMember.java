@@ -1,4 +1,4 @@
-package LibrarySystem;
+package finalProject.LibrarySystem;
 
 public class FacultyMember extends User {
     private String department;

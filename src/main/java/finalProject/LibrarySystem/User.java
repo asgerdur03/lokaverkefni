@@ -1,12 +1,8 @@
-package LibrarySystem;
+package finalProject.LibrarySystem;
 
-public class Author {
+public class User {
     private String name;
-
-    public Author(String name) {
-        this.name = name;
-    }
-
+    
     public String getName() {
         return name;
     }
@@ -14,5 +10,8 @@ public class Author {
     public void setName(String name) {
         this.name = name;
     }
-    
+
+    public User(String name) {
+        this.name = name;
+    }
 }

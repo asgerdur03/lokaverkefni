@@ -1,4 +1,4 @@
-package LibrarySystem;
+package finalProject.LibrarySystem;
 
 public class Student extends User {
     private boolean feePaid;
