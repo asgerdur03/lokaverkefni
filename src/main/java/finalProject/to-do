@@ -5,7 +5,7 @@ Use maven project layout (x)
 Geta notað maven commands
     Compile
     Test
-    Exec : java
+    Exec : java (sama og mvn run?)
     Package
     Site
 JUnit test business logic behind the user interface
