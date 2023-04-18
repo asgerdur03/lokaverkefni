@@ -4,8 +4,8 @@ import java.time.LocalDate;
 
 public class Lending {
     private LocalDate dueDate;
-    Book book;
-    User user;
+    private Book book;
+    private User user;
 
     public LocalDate getDueDate() {
         return dueDate;
@@ -34,5 +34,6 @@ public class Lending {
     public Lending(Book book, User user) {
         this.book = book;
         this.user = user;
+        this.dueDate = LocalDate.now().plusDays(30);
     }
 }

@@ -1,17 +1,16 @@
 package finalProject.LibrarySystem;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Book {
     private String title;
-    private List<Author> authors;
+    private List<Author> authors = new ArrayList<Author>();
 
     public Book(String title, List<Author> authors) throws EmptyAuthorListException {
+        super();
         this.title = title;
         this.authors = authors;
-        if (this.authors.isEmpty()) {
-            throw new EmptyAuthorListException("finalProject.Files.LibrarySystem.Author list is empty");
-        }
     }
 
     public String getTitle() {
@@ -22,17 +21,11 @@ public class Book {
         this.title = title;
     }
 
-    public List<Author> getAuthors() throws EmptyAuthorListException {
-        if (this.authors.isEmpty()) {
-            throw new EmptyAuthorListException("finalProject.Files.LibrarySystem.Author list is empty");
-        }
+    public List<Author> getAuthors(){
         return authors;
     }
 
     public void setAuthors(List<Author> authors) throws EmptyAuthorListException {
-        if (this.authors.isEmpty()) {
-            throw new EmptyAuthorListException("finalProject.Files.LibrarySystem.Author list is empty");
-        }
         this.authors = authors;
     }
 
