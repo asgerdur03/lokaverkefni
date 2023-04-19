@@ -11,30 +11,29 @@ Both the implementation and the tests are in Java package `finalProject`,  but i
 
 (breyta þessum þegar ég er búin)
 - `src/main/java/finalProject`:
-    - `LibrarySystem/Author.java`
-    - `LibrarySystem/Book.java`
-    - `LibrarySystem/EmptyAuthorListException.java`
-    - `LibrarySystem/FacultyMember.java`
-    - `LibrarySystem/Lending.java`
-    - `LibrarySystem/LibrarySystems.java`
-    - `LibrarySystem/Student.java`
-    - `LibrarySystem/User.java`
-    - `LibrarySystem/UserOrBookDoesNotExistException.java`
+    - `LibrarySystem/Author.java` Class to build Authors
+    - `LibrarySystem/Book.java` Class to build Books
+    - `LibrarySystem/EmptyAuthorListException.java` extends exception if Book has no Authors
+    - `LibrarySystem/FacultyMember.java` Extends User, creates Faculty member
+    - `LibrarySystem/Lending.java` A class for method to rent out books, and more
+    - `LibrarySystem/LibrarySystems.java` Class that uses all the other classes to make a funtioning Library System
+    - `LibrarySystem/Student.java` Extends User, creates Student 
+    - `LibrarySystem/User.java` Abstract class used by other classes with users.
+    - `LibrarySystem/UserOrBookDoesNotExistException.java` Extends exception if Book or User exists
   
-    - `resources/`
   
 - `src/test/java`:
-    - `finalProject.LibrarySystem`: The package contains an `Alltests` class that collects all the test cases for the package. Test cases testing a (???) .
+    - `finalProject.LibrarySystem`: The package contains an `AllLibrarySystemTests` class that runs all the test cases for the package.
 
 Maven:
-- `mvn exec:java` executes the main method, "finalProject.Main"
+- `mvn exec:java` executes the main method, "finalProject.LibrarySystem.Main"
 - `mvn compile` compiles all implementation classes.
 - `mvn test` runs all test cases (i.e. all classes with a name that either starts with `Test` or ends with `Test`, `Tests`, or `TestCase`).
 - `mvn package` Creates a distributable package of the project's compiled code, along with any necessary dependencies and resources, such as JAR or WAR files.
 - `mvn site` Generates a website that documents various aspects of the project, such as project reports, dependencies, and code quality metrics.
 
 
-License: [MIT](http://www.opensource.org/licenses/mit-license.php)
+License: [MIT](LICENCE)
 
 Design: [Class Diagram](src/site/markdown/DESIGN.md)
 

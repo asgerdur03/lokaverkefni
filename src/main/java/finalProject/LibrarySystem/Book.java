@@ -3,7 +3,7 @@ package finalProject.LibrarySystem;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Book {
+public class Book implements Lendable{
     private String title;
     private List<Author> authors = new ArrayList<Author>();
 

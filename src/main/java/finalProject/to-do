@@ -1,21 +1,21 @@
 Verkefnakröfur:
 
-Nota git (x)
-Use maven project layout (x)
+Nota git
+Use maven project layout
 Geta notað maven commands
     Compile
     Test
-    Exec : java (sama og mvn run?)
+    Exec : java
     Package
     Site
 JUnit test business logic behind the user interface
-Create a class diagram ?(held sama mynd og ver8)
+Create a class diagram
 Use design patterns?
-Refactoring (x)
+Refactoring
 Package a jar file
 Provide jar file commands
 Documentation
-    Licence (x)
+    Licence
     More detailed documentation(markdown)
         UML class diagram
         Where pattern is used
