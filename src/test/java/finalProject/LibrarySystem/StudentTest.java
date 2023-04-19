@@ -6,7 +6,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class StudentTest {
-    private String name = "John";
+    private String name = "Poor Student";
     private boolean feePaid = true;
     private Student student;
 

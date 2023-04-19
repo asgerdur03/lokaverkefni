@@ -2,7 +2,7 @@ Verkefnakröfur:
 
 Nota git
 Use maven project layout
-Geta notað maven commands
+Geta notað maven commands (kafli 4)
     Compile
     Test
     Exec : java
@@ -10,10 +10,10 @@ Geta notað maven commands
     Site
 JUnit test business logic behind the user interface
 Create a class diagram
-Use design patterns?
+Use design patterns
 Refactoring
 Package a jar file
-Provide jar file commands
+Provide jar file command
 Documentation
     Licence
     More detailed documentation(markdown)
@@ -21,9 +21,13 @@ Documentation
         Where pattern is used
         User-end documentation (e.g how to run your jar)
 
-
-
 To-do laga:
-Laga package names in readme
 Setja retta mynd i DESIGN
-gera user interface í Main
+klara design patterns
+jar file? + jar file command
+
+
+double checka:
+maven commands
+
+
