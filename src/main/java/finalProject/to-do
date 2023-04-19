@@ -23,11 +23,15 @@ Documentation
 
 To-do laga:
 Setja retta mynd i DESIGN
-klara design patterns
+gera design patterns
+klara class diagram
 jar file? + jar file command
+breyta bok i
 
-
-double checka:
-maven commands
+• Package a jar file and provide a command so that an end user without an IDE or Maven
+can run your program (Chapter 3/Assignment 3 & 4): for running, you either need to
+add for each dependency a separate jar file or let Maven create a fat jar that contains
+all dependencies using the maven-assembly-plugin (do some web search as this was
+not covered in this course).
 
 
