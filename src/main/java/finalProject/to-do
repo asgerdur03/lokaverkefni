@@ -1,25 +1,24 @@
 Verkefnakröfur:
 
 Nota git
-Use maven project layout
-Geta notað maven commands (kafli 4)
+Use maven project layout (x)
+Geta notað maven commands (kafli 4) (held að sé komið, má double checka)
     Compile
     Test
     Exec : java
     Package
     Site
-JUnit test business logic behind the user interface
-Create a class diagram
-Use design patterns
-Refactoring
-Package a jar file
-Provide jar file command
-Documentation
-    Licence
-    More detailed documentation(markdown)
-        UML class diagram
-        Where pattern is used
-        User-end documentation (e.g how to run your jar)
+JUnit test business logic behind the user interface (x)
+Create a class diagram (x)
+Use design patterns (skoða, bæta svo við README)
+Refactoring (x)
+Package a jar file (x komið held ég)
+Provide jar file command (x, held að það sé ekki rétt samt)
+Documentation (x)
+    Licence (x)
+        UML class diagram (x)
+        Where pattern is used (ekki komið)
+        User-end documentation (e.g how to run your jar) (x, hægt að bæta ehv við)
 
 To-do laga:
 gera design patterns (Bæta við í README file)
