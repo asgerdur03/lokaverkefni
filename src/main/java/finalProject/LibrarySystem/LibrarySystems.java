@@ -16,18 +16,25 @@ public class LibrarySystems {
         users= new ArrayList<>();
     }
     public void setDefaultBooks() throws EmptyAuthorListException {
-        Author suzanne =  new Author("Suzanne Collins");
-        List<Author> hungergamesauthor = new ArrayList<Author>();
-        hungergamesauthor.add(suzanne);
-        lendables.add(new Book("The Hunger Games", hungergamesauthor));
-        lendables.add(new Book("The Hunger Games: Mockingjay", hungergamesauthor));
-        lendables.add(new Book("The Hunger Games: Cathing Fire", hungergamesauthor));
+        Author author1 =new Author("Tolken");
+        List<Author> list1 = new ArrayList<Author>();
+        list1.add(author1);
+        lendables.add(new Book("Hobbit 1", list1));
+        lendables.add(new Book("Hobbit 2", list1));
+        lendables.add(new Book("Hobbit 3", list1));
 
-        Author jkrowling = new Author("J.K Rowling");
-        List<Author> harrypotterauthor = new ArrayList<Author>();
-        harrypotterauthor.add(jkrowling);
-        lendables.add(new Book("Harry Potter and the Philosopher's Stone", harrypotterauthor));
-        lendables.add(new Book("Harry Potter and the Chamber of Secrets", harrypotterauthor));
+        Author auhor2 = new Author("John Doe");
+        List<Author> list2 = new ArrayList<Author>();
+        list2.add(auhor2);
+        lendables.add(new Book("Book vol 1", list2));
+        lendables.add(new Book("Book vol 2",list2));
+
+        Author author3 = new Author("God");
+        List<Author> list3 = new ArrayList<>();
+        list3.add(author3);
+        lendables.add(new Book("Bibiel", list3));
+
+
     }
 
     public Lendable addLendable(String title, List<Author> authorList)throws EmptyAuthorListException{

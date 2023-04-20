@@ -22,11 +22,9 @@ Documentation
         User-end documentation (e.g how to run your jar)
 
 To-do laga:
-Setja retta mynd i DESIGN
 gera design patterns
-klara class diagram
 jar file? + jar file command
-breyta bok i
+
 
 • Package a jar file and provide a command so that an end user without an IDE or Maven
 can run your program (Chapter 3/Assignment 3 & 4): for running, you either need to

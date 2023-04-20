@@ -1,0 +1,99 @@
+<diagram program="umletino" version="15.1"><zoom_level>5</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>500</x><y>100</y><w>125</w><h>95</h></coordinates><panel_attributes>Lending
+--
+-lendable: Lendable
+-dueDate: java.time.LocalDate
+-user: User
+--
++Lending(Book book, User user): ctor
++getDueDate(): LocalDate
++setDueDate(LocalDate dueDate): void
++getLendable(): Lendable
++setLendable(Lendable lendable): void
++getUser(): User
++setUser(User user): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>365</x><y>230</y><w>200</w><h>125</h></coordinates><panel_attributes>LibrarySystem
+--
+-lendables: List&lt;Lendables&gt;
+-lendings: List&lt;Lendings&gt;
+users: List&lt;User&gt;
+--
++LibrarySystem(): ctor
++addStudentUser(String name, boolean feePaid): void
++addFacultyMemberUser(String name, String department): void
++findLendbleByTitle(String title): Lendable
++findUserByName(String name): User
++borrowLendable(User user, Lendable lendable): void
++extendLending(Lendable lendable, LocalDate newDueDate): void
+returnLendable(User user, Lendable lendable): void
++setDefaultBooks(): void
++addLendable(String title, List&lt;Author&gt; authorlist): Lendable
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>400</y><w>105</w><h>55</h></coordinates><panel_attributes>User (abstract)
+--
+-name: String
+--
++User(String name): ctor
++getName(); String
++setName(String name): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>495</y><w>170</w><h>55</h></coordinates><panel_attributes>FacultyMember
+--
+-department: String
+--
++FacultyMember(String name, String department): ctor
++getDepartment(): String
++setDepartment(String department): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>255</x><y>500</y><w>140</w><h>55</h></coordinates><panel_attributes>Student
+--
+-feePaid: boolean
+-
++Student(String name, boolean feepaid): ctor
++isFeePaid(): boolean
++setFeePaid(boolean feePaid): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>465</x><y>350</y><w>55</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=lendings  0...n</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>150</x><y>180</y><w>105</w><h>50</h></coordinates><panel_attributes>Author
+--
+-name: String
+--
++Author(String name): ctor
++getName(): String
++setName(String name): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>165</x><y>270</y><w>140</w><h>80</h></coordinates><panel_attributes>Book
+--
+-authors: List&lt;Author&gt;
+-title: String
+--
++Book(String title, List&lt;Author&gt; authors): ctor
++addAuthor(Author author): void
++getAuthors(): List&lt;Author&gt;
++getTitle(): String
++setAuthors(List&lt;Author&gt;):void
++setTitle(String title): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>190</x><y>375</y><w>155</w><h>90</h></coordinates><panel_attributes>BookCollection
+--
+-books: List&lt;Book&gt;
+-title: String
+--
++BookCollection(List&lt;Book&gt; books, String title): ctor
++addBook(Book book): void
++getAuthors(): List&lt;Author&gt;
++getBooks(): List&lt;Book&gt;
++getTitle(): String
++removeBook(Book book): void
++setBooks(List&lt;Book&gt;  books): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>435</y><w>100</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-
+m1=extends</panel_attributes><additional_attributes>10;10;180;10;180;120</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>445</y><w>90</w><h>65</h></coordinates><panel_attributes>lt=&lt;&lt;-
+m1=extends</panel_attributes><additional_attributes>160;10;110;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>545</x><y>190</y><w>55</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;80;90;10</additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>190</y><w>95</w><h>245</h></coordinates><panel_attributes>lt=&lt;-
+m1=users</panel_attributes><additional_attributes>10;460;170;460;170;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>175</x><y>75</y><w>105</w><h>45</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+Lendable
+--
++getAuthors(): List&lt;Author&gt;
++getTitle(): String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>295</x><y>145</y><w>145</w><h>40</h></coordinates><panel_attributes>UserOrLendableDoesNotExistException
+--
++UserOrLendableDoesNotExistException(String 
+errormessage): ctor</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>325</x><y>55</y><w>105</w><h>35</h></coordinates><panel_attributes>EmptyAuthorListException
+-
++EmptyAuthorListException(String 
+errormessage): ctor
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>460</x><y>40</y><w>70</w><h>20</h></coordinates><panel_attributes>java.lang.Exception
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>180</y><w>40</w><h>60</h></coordinates><panel_attributes>lt=&lt;..
+m1=&lt;&lt;throws&gt;&gt;</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>425</x><y>75</y><w>50</w><h>165</h></coordinates><panel_attributes>lt=&lt;..
+m1=&lt;&lt;throws&gt;&gt;</panel_attributes><additional_attributes>10;10;80;10;80;310</additional_attributes></element><element><id>Relation</id><coordinates><x>425</x><y>45</y><w>45</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-
+m1= extends</panel_attributes><additional_attributes>70;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>435</x><y>55</y><w>75</w><h>115</h></coordinates><panel_attributes>lt=&lt;&lt;-
+m1=extends</panel_attributes><additional_attributes>90;10;90;210;10;210</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>115</y><w>115</w><h>165</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>210;310;110;310;110;210;20;210;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>215</x><y>225</y><w>35</w><h>55</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;50;90</additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>345</y><w>35</w><h>40</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>50;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>275</x><y>90</y><w>235</w><h>45</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;450;70</additional_attributes></element><element><id>Relation</id><coordinates><x>135</x><y>80</y><w>65</w><h>335</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>80;10;10;10;20;650;110;650</additional_attributes></element><element><id>Relation</id><coordinates><x>110</x><y>95</y><w>75</w><h>210</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>130;10;10;10;10;400;110;400</additional_attributes></element></diagram>
