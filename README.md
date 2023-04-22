@@ -40,10 +40,8 @@ License: [MIT](LICENCE)
 
 Design: [Class Diagram](src/site/markdown/DESIGN.md)
 
-Patterns: This project uses --- patterns
-- `The ---- pattern` + utskýring á hvap það er
-.
-- hvar patterns voru notuð mep tilvísun/link
+Patterns: This project uses Observer patterns
+- We use bindings, event handlers and listeners which can all be seen throughout the project.
 
 # User end documentation
 To compile the project execute the following command:
