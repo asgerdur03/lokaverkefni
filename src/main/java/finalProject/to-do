@@ -19,10 +19,9 @@ Documentation (x)
         UML class diagram (x)
         Where pattern is used (ekki komið)
         User-end documentation (e.g how to run your jar) (x, hægt að bæta ehv við)
-
-To-do laga:
-gera design patterns (Bæta við í README file)
+gera design patterns (x)
 jar file? + jar file command
+To-do laga:
 
 
 • Package a jar file and provide a command so that an end user without an IDE or Maven
