@@ -32,7 +32,7 @@ public class LibrarySystems {
         Author author3 = new Author("God");
         List<Author> list3 = new ArrayList<>();
         list3.add(author3);
-        lendables.add(new Book("Bibiel", list3));
+        lendables.add(new Book("Bible", list3));
 
 
     }
