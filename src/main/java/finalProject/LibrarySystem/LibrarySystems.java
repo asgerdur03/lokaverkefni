@@ -16,7 +16,7 @@ public class LibrarySystems {
         users= new ArrayList<>();
     }
     public void setDefaultBooks() throws EmptyAuthorListException {
-        Author author1 =new Author("Tolken");
+        Author author1 =new Author("Tolkien");
         List<Author> list1 = new ArrayList<Author>();
         list1.add(author1);
         lendables.add(new Book("Hobbit 1", list1));
@@ -39,7 +39,7 @@ public class LibrarySystems {
 
     public Lendable addLendable(String title, List<Author> authorList)throws EmptyAuthorListException{
         if(authorList.isEmpty()){
-            throw new EmptyAuthorListException("Author lsit cannot be empty");
+            throw new EmptyAuthorListException("Author list cannot be empty");
         }
         Lendable lendable = new Book(title, authorList);
         lendables.add(lendable);
